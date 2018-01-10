@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+{{objects}}
+
+<ul> 
+	{% for wow in objects %}
+		<a href="{% url 'detail' restaurant_id=wow.id %}">
+		<li> {{wow.name}} - {{wow.description}} </li></a>>
+
+	{% endfor%} 
+</ul>
+
+
+</body>
+</html>
